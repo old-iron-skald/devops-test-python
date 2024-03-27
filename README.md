@@ -1,3 +1,5 @@
+[![Continuous Integration](https://github.com/old-iron-skald/devops-test-python/actions/workflows/blank.yml/badge.svg?event=push)](https://github.com/old-iron-skald/devops-test-python/actions/workflows/blank.yml)
+
 # Flask Product API
 
 This is a simple Flask API for managing product data. The API allows you to perform basic CRUD (Create, Read, Update, Delete) operations on products.
