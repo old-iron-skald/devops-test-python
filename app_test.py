@@ -18,7 +18,7 @@ class TestAPI(unittest.TestCase):
         mock_create.return_value = ProductModel(id=1, name="Test Product", price=10.0)
         response = self.app.post('/api/products', json={"name": "Test Product", "price": 10.0})
         self.assertEqual(response.status_code, 201)
-        self.assertIn(b'Test Product', response.data)
+        self.assertIn(b'Product added successfully', response.data)
 
     @patch('app.get_product_by_id')
     def test_get_product(self, mock_get):
@@ -29,3 +29,4 @@ class TestAPI(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
